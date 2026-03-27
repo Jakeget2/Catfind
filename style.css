@@ -399,3 +399,22 @@ header p {
     box-shadow: 0 8px 20px rgba(26, 71, 42, 0.3);
     background: linear-gradient(135deg, #2d5a3d 0%, #1a472a 100%);
 }
+/* WIKIPEDIA LINK STYLING */
+.wiki-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(26, 71, 42, 0.2);
+    font-weight: 600;
+}
+
+.wiki-link:hover {
+    background: linear-gradient(135deg, #2d5a3d 0%, #1a472a 100%);
+    transform: translateX(3px);
+    box-shadow: 0 6px 15px rgba(26, 71, 42, 0.3);
+}

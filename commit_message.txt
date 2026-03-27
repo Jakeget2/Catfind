@@ -1,0 +1,1 @@
+Initial setup of the Catholic Mass Finder website, which includes a feature to display the verse of the day. This commit establishes the foundational structure for the application and begins the integration of scripture content.

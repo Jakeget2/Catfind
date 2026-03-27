@@ -1,1 +1,33 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Find My Mass - Catholic Mass Finder</title><link rel="stylesheet" href="style.css"></head><body><div class="container"><header><h1>📿 Find My Mass</h1><p>Search for Mass times in your area</p></header><div class="search-section"><input type="text" id="zipCode" placeholder="Enter your zip code" maxlength="5"><button onclick="searchMass()">Search Mass Times</button></div><div id="results" class="results-section"></div><div class="back-button"><a href="index.html">← Back to Home</a></div></div><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Mass - Catholic Mass Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📿 Find My Mass</h1>
+            <p>Search for Mass times in your area</p>
+        </header>
+
+        <div class="search-section">
+            <h3>Enter Your Location</h3>
+            <iframe src="https://www.discovercatholicbusiness.com/diocese-finder" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0"
+                    style="border: 1px solid #ddd; border-radius: 8px;">
+            </iframe>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

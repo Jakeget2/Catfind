@@ -357,3 +357,45 @@ header p {
         gap: 15px;
     }
 }
+/* VERSE SECTION */
+.verse-section {
+    padding: 50px 30px;
+    background: linear-gradient(135deg, #f0f4f0 0%, #e8f0e8 100%);
+    text-align: center;
+    border-top: 2px solid #1a472a;
+}
+
+.verse-section h2 {
+    color: #1a472a;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+#verse-text {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 5px solid #d4af37;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(26, 71, 42, 0.1);
+    line-height: 1.8;
+}
+
+.verse-button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #1a472a 0%, #2d5a3d 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(26, 71, 42, 0.2);
+}
+
+.verse-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(26, 71, 42, 0.3);
+    background: linear-gradient(135deg, #2d5a3d 0%, #1a472a 100%);
+}

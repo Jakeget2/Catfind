@@ -1,0 +1,8 @@
+<div id="diocese-finder-widget">
+    <iframe src="https://www.discovercatholicbusiness.com/diocese-finder" 
+            width="100%" 
+            height="600" 
+            frameborder="0"
+            style="border: 1px solid #ddd; border-radius: 8px;">
+    </iframe>
+</div>

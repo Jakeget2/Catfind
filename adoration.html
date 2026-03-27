@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Find Adoration Times</title>
+    <title>Find Adoration - Catholic Mass Finder</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Find Adoration Times</h1>
-    <form action="/search" method="get">
-        <label for="zipcode">Enter Your Zip Code:</label>
-        <input type="text" id="zipcode" name="zipcode" required>
-        <button type="submit">Search</button>
-    </form>
-    <br>
-    <a href="/">Back to Home</a>
+    <div class="container">
+        <header>
+            <h1>🕯️ Find Adoration</h1>
+            <p>Search for Eucharistic Adoration times in your area</p>
+        </header>
+
+        <div class="search-section">
+            <h3>Enter Your Location</h3>
+            <iframe src="https://www.discovercatholicbusiness.com/diocese-finder" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0"
+                    style="border: 1px solid #ddd; border-radius: 8px;">
+            </iframe>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

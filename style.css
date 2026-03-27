@@ -260,43 +260,39 @@ header p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
-    background: linear-gradient(rgba(26, 71, 42, 0.85), rgba(26, 71, 42, 0.85)), url('monstrance-bg.jpg') center/cover fixed;
-    background-attachment: fixed;
+    background: linear-gradient(135deg, #f0f4f0 0%, #e8f0e8 100%);
 }
 
 .miracle-card {
-    background: rgba(255, 255, 255, 0.95);
-    border: 2px solid #d4af37;
+    background: white;
+    border: 2px solid #8b4557;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(92, 46, 58, 0.2);
     transition: all 0.4s ease;
-    backdrop-filter: blur(5px);
 }
 
 .miracle-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 40px rgba(26, 71, 42, 0.4);
-    border-color: #1a472a;
-    background: white;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(92, 46, 58, 0.3);
+    border-color: #d4af37;
 }
 
 .miracle-card h3 {
-    color: #1a472a;
+    color: #5c2e3a;
     margin-bottom: 15px;
     font-size: 1.3rem;
 }
 
 .miracle-card p {
-    color: #333;
+    color: #666;
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
 .miracle-card strong {
-    color: #1a472a;
+    color: #5c2e3a;
 }
-
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     header h1 {

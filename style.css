@@ -254,28 +254,31 @@ header p {
     margin-bottom: 15px;
     font-size: 1.05rem;
 }
-
 /* MIRACLES SECTION */
 .miracles-section {
     padding: 40px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
+    background: linear-gradient(rgba(26, 71, 42, 0.85), rgba(26, 71, 42, 0.85)), url('monstrance-bg.jpg') center/cover fixed;
+    background-attachment: fixed;
 }
 
 .miracle-card {
-    background: white;
-    border: 2px solid #1a472a;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #d4af37;
     border-radius: 12px;
     padding: 25px;
-    box-shadow: 0 6px 20px rgba(26, 71, 42, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
+    backdrop-filter: blur(5px);
 }
 
 .miracle-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 30px rgba(26, 71, 42, 0.3);
-    border-color: #d4af37;
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(26, 71, 42, 0.4);
+    border-color: #1a472a;
+    background: white;
 }
 
 .miracle-card h3 {
@@ -285,7 +288,7 @@ header p {
 }
 
 .miracle-card p {
-    color: #666;
+    color: #333;
     line-height: 1.7;
     margin-bottom: 10px;
 }

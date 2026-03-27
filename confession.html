@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Confession Times</title>
+</head>
+<body>
+    <h1>Find Confession Times</h1>
+    <form id="zipForm">
+        <label for="zipCode">Enter your Zip Code:</label>
+        <input type="text" id="zipCode" name="zipCode" required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <button onclick="location.href='index.html'">Back to Home</button>
+
+    <script>
+        document.getElementById('zipForm').onsubmit = function(event) {
+            event.preventDefault();
+            const zipCode = document.getElementById('zipCode').value;
+            // Add functionality to search for confession times using the zip code here.
+            document.getElementById('results').innerHTML = `Searching confession times for ZIP Code: ${zipCode}`;
+        };
+    </script>
+</body>
+</html>

@@ -9,33 +9,47 @@
 <body>
     <div class="container">
         <header>
-            <h1>⛪ Catholic Mass Finder</h1>
-            <p>Find Mass times, Confession, and Adoration in your area</p>
+            <h1>⛪ Catholic Finder</h1>
+            <p>Find Mass, Learn About Faith</p>
         </header>
 
-        <!-- Navigation Menu -->
         <div class="navigation-menu">
-            <h2>What would you like to find?</h2>
             <div class="menu-buttons">
-                <a href="mass.html" class="menu-button">📿 Find My Mass</a>
-                <a href="adoration.html" class="menu-button">🕯️ Find Adoration</a>
-                <a href="confession.html" class="menu-button">✝️ Find Confession</a>
+                <a href="https://www.masstimes.org/" class="menu-button" target="_blank">
+                    🔍 Find a Church
+                </a>
+                <a href="eucharistic-miracles.html" class="menu-button">
+                    ✨ Eucharistic Miracles
+                </a>
             </div>
         </div>
 
-        <div class="search-section">
-            <input 
-                type="text" 
-                id="zipCode" 
-                placeholder="Enter your zip code" 
-                maxlength="5"
-            >
-            <button onclick="searchMass()">Search</button>
+        <div class="verse-section">
+            <h2>📖 Verse of the Day</h2>
+            <p id="verse-text" style="font-size: 1.2rem; font-style: italic; color: #1a472a; line-height: 1.8;">Loading...</p>
+            <button onclick="getNewVerse()" class="verse-button">Get Another Verse</button>
         </div>
-
-        <div id="results" class="results-section"></div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Display verse on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            getNewVerse();
+        });
+
+        function getNewVerse() {
+            const verses = [
+                "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11",
+                "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight. - Proverbs 3:5-6",
+                "The Lord is my shepherd, I lack nothing. - Psalm 23:1",
+                "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.' - John 14:6",
+                "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
+                "Come to me, all you who are weary and burdened, and I will give you rest. - Matthew 11:28"
+            ];
+            const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+            document.getElementById('verse-text').innerText = randomVerse;
+        }
+    </script>
 </body>
 </html>

@@ -435,3 +435,183 @@ header p {
     transform: translateX(3px);
     box-shadow: 0 6px 15px rgba(26, 71, 42, 0.3);
 }
+/* PRAYER SELECTOR */
+.prayer-selector {
+    padding: 40px 30px;
+    text-align: center;
+    background: linear-gradient(to right, #f8f9fa, #ffffff);
+    border-bottom: 2px solid #e9ecef;
+}
+
+.prayer-selector h2 {
+    color: #5c2e3a;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lang-btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #8b4557 0%, #5c2e3a 100%);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(92, 46, 58, 0.2);
+}
+
+.lang-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(92, 46, 58, 0.3);
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, #5c2e3a 0%, #8b4557 100%);
+    border-color: #d4af37;
+    box-shadow: 0 8px 20px rgba(92, 46, 58, 0.4);
+}
+
+/* PRAYER CONTENT */
+.prayer-content {
+    display: none;
+    padding: 40px 30px;
+}
+
+.prayer-content.active {
+    display: block;
+}
+
+.rosary-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rosary-section h2 {
+    color: #5c2e3a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.prayer-card {
+    background: white;
+    border-left: 5px solid #d4af37;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-card h3 {
+    color: #5c2e3a;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.prayer-card p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.rosary-structure {
+    background: linear-gradient(135deg, #f0f4f0 0%, #e8f0e8 100%);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border: 2px solid #5c2e3a;
+}
+
+.rosary-structure h3 {
+    color: #5c2e3a;
+    margin-bottom: 15px;
+}
+
+.rosary-structure ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.rosary-structure li {
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.rosary-structure li:before {
+    content: "✨ ";
+    margin-right: 10px;
+}
+
+/* MYSTERIES SECTION */
+.mysteries-section {
+    margin-top: 40px;
+}
+
+.mysteries-section h3 {
+    color: #5c2e3a;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mystery-card {
+    background: white;
+    border: 2px solid #8b4557;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 6px 20px rgba(92, 46, 58, 0.1);
+}
+
+.mystery-card h4 {
+    color: #5c2e3a;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.mystery-card ol {
+    padding-left: 25px;
+}
+
+.mystery-card li {
+    color: #333;
+    margin: 12px 0;
+    line-height: 1.6;
+}
+
+.mystery-card strong {
+    color: #5c2e3a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    .lang-btn {
+        width: 100%;
+    }
+
+    .rosary-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .prayer-card {
+        padding: 15px;
+    }
+
+    .mystery-card {
+        padding: 15px;
+    }
+}

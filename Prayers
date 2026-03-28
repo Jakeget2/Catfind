@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayers - Catholic Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🙏 Catholic Prayers</h1>
+            <p>Pray with the Catholic Church</p>
+        </header>
+
+        <div class="prayer-selector">
+            <h2>Select Your Prayer</h2>
+            <div class="button-group">
+                <button class="lang-btn active" onclick="showLanguage('english')">🇺🇸 English</button>
+                <button class="lang-btn" onclick="showLanguage('latin')">🇻🇦 Latin</button>
+            </div>
+        </div>
+
+        <!-- ENGLISH ROSARY -->
+        <div id="english-prayer" class="prayer-content active">
+            <div class="rosary-section">
+                <h2>The Holy Rosary - English</h2>
+                
+                <div class="prayer-card">
+                    <h3>Sign of the Cross</h3>
+                    <p>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Apostles' Creed</h3>
+                    <p>I believe in God, the Father Almighty, Creator of heaven and earth; and in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended into hell; the third day He rose again from the dead; He ascended into heaven, and sitteth at the right hand of God, the Father Almighty; from thence He shall come to judge the living and the dead. I believe in the Holy Spirit, the holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and life everlasting. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Our Father (The Lord's Prayer)</h3>
+                    <p>Our Father, who art in heaven, hallowed be Thy name; Thy kingdom come; Thy will be done on earth as it is in heaven. Give us this day our daily bread; and forgive us our trespasses as we forgive those who trespass against us; and lead us not into temptation, but deliver us from evil. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Hail Mary</h3>
+                    <p>Hail Mary, full of grace, the Lord is with thee; blessed art thou amongst women, and blessed is the fruit of thy womb, Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Glory Be</h3>
+                    <p>Glory be to the Father, and to the Son, and to the Holy Spirit, as it was in the beginning, is now, and ever shall be, world without end. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Fatima Prayer</h3>
+                    <p>O my Jesus, forgive us our sins, save us from the fires of hell, lead all souls to heaven, especially those most in need of Thy mercy. Amen.</p>
+                </div>
+
+                <div class="rosary-structure">
+                    <h3>Structure of the Rosary</h3>
+                    <p><strong>The Rosary consists of 5 sets (decades), each containing:</strong></p>
+                    <ul>
+                        <li>1 Our Father</li>
+                        <li>10 Hail Marys</li>
+                        <li>1 Glory Be</li>
+                        <li>1 Fatima Prayer</li>
+                    </ul>
+                </div>
+
+                <div class="mysteries-section">
+                    <h3>The Mysteries of the Rosary</h3>
+                    
+                    <div class="mystery-card">
+                        <h4>🕊️ Joyful Mysteries (Monday & Saturday)</h4>
+                        <ol>
+                            <li><strong>The Annunciation:</strong> Mary learns she will bear the Son of God</li>
+                            <li><strong>The Visitation:</strong> Mary visits her cousin Elizabeth</li>
+                            <li><strong>The Nativity:</strong> Jesus is born in Bethlehem</li>
+                            <li><strong>The Presentation:</strong> Jesus is presented at the Temple</li>
+                            <li><strong>The Finding of Jesus:</strong> Mary and Joseph find Jesus teaching in the Temple</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>✝️ Sorrowful Mysteries (Tuesday & Friday)</h4>
+                        <ol>
+                            <li><strong>The Agony in the Garden:</strong> Jesus prays in the Garden of Gethsemane</li>
+                            <li><strong>The Scourging at the Pillar:</strong> Jesus is brutally whipped</li>
+                            <li><strong>The Crowning with Thorns:</strong> Jesus is mocked and crowned with thorns</li>
+                            <li><strong>The Carrying of the Cross:</strong> Jesus carries His cross to Calvary</li>
+                            <li><strong>The Crucifixion:</strong> Jesus dies on the cross for our salvation</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>🌟 Glorious Mysteries (Wednesday & Sunday)</h4>
+                        <ol>
+                            <li><strong>The Resurrection:</strong> Jesus rises from the dead</li>
+                            <li><strong>The Ascension:</strong> Jesus ascends to heaven</li>
+                            <li><strong>The Descent of the Holy Spirit:</strong> The Holy Spirit comes upon the Apostles</li>
+                            <li><strong>The Assumption:</strong> Mary is assumed into heaven</li>
+                            <li><strong>The Coronation of Mary:</strong> Mary is crowned Queen of Heaven</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>🕯️ Luminous Mysteries (Thursday)</h4>
+                        <ol>
+                            <li><strong>The Baptism of Jesus:</strong> Jesus is baptized in the Jordan River</li>
+                            <li><strong>The Wedding at Cana:</strong> Jesus performs His first miracle</li>
+                            <li><strong>The Proclamation of the Kingdom:</strong> Jesus preaches the Gospel</li>
+                            <li><strong>The Transfiguration:</strong> Jesus is transfigured before Peter, James, and John</li>
+                            <li><strong>The Institution of the Eucharist:</strong> Jesus gives us His Body and Blood</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Hail, Holy Queen</h3>
+                    <p>Hail, holy Queen, Mother of Mercy, hail, our life, our sweetness, and our hope! To thee do we cry, poor banished children of Eve; to thee do we send up our sighs, mourning and weeping in this valley of tears. Turn, then, most gracious Advocate, thine eyes of mercy toward us; and after this our exile, show unto us the blessed fruit of thy womb, Jesus. O clement, O loving, O sweet Virgin Mary.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- LATIN ROSARY -->
+        <div id="latin-prayer" class="prayer-content">
+            <div class="rosary-section">
+                <h2>Rosarium Sanctum - Latina</h2>
+                
+                <div class="prayer-card">
+                    <h3>Signum Crucis</h3>
+                    <p>In nomine Patris, et Filii, et Spiritus Sancti. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Symbolum Apostolorum</h3>
+                    <p>Credo in Deum Patrem omnipotentem, Creatorem caeli et terrae, et in Iesum Christum, Filium eius unicum, Dominum nostrum, qui conceptus est de Spiritu Sancto, natus ex Maria Virgine, passus sub Pontio Pilato, crucifixus, mortuus, et sepultus, descendit ad inferos, tertia die resurrexit a mortuis, ascendit ad caelos, sedet ad dexteram Dei Patris omnipotentis, inde venturus est iudicare vivos et mortuos. Credo in Spiritum Sanctum, sanctam Ecclesiam catholicam, sanctorum communionem, remissionem peccatorum, carnis resurrectionem, vitam aeternam. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Pater Noster</h3>
+                    <p>Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum. Fiat voluntas tua, sicut in caelo et in terra. Panem nostrum quotidianum da nobis hodie, et dimitte nobis debita nostra sicut et nos dimittimus debitoribus nostris. Et ne nos inducas in tentationem, sed libera nos a malo. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Ave Maria</h3>
+                    <p>Ave, Maria, gratia plena, Dominus tecum. Benedicta tu in mulieribus, et benedictus fructus ventris tui, Iesus. Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostrae. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Gloria Patri</h3>
+                    <p>Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc, et semper, et in saecula saeculorum. Amen.</p>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Oratio Fatimensis</h3>
+                    <p>O mi Iesu, ignosce nobis, salva nos ab igne inferni, duc omnes animas in caelum, praesertim eas, quae maxime misericordiae tuae indigent. Amen.</p>
+                </div>
+
+                <div class="rosary-structure">
+                    <h3>Structura Rosarii</h3>
+                    <p><strong>Rosarium constat ex quinque decadibus, quae continenta sunt:</strong></p>
+                    <ul>
+                        <li>1 Pater Noster</li>
+                        <li>10 Ave Maria</li>
+                        <li>1 Gloria Patri</li>
+                        <li>1 Oratio Fatimensis</li>
+                    </ul>
+                </div>
+
+                <div class="mysteries-section">
+                    <h3>Mysteria Rosarii</h3>
+                    
+                    <div class="mystery-card">
+                        <h4>🕊️ Mysteria Laetitiae (Lunae et Sabbato)</h4>
+                        <ol>
+                            <li><strong>Annuntiatio:</strong> Maria accipit nuntium ab Angelo</li>
+                            <li><strong>Visitatio:</strong> Maria visitavit Elisabeth</li>
+                            <li><strong>Nativitas:</strong> Iesus natus est in Bethlehem</li>
+                            <li><strong>Praesentatio:</strong> Iesus praesentatus est in Templo</li>
+                            <li><strong>Inventio:</strong> Maria et Ioseph invenerunt Iesum in Templo</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>✝️ Mysteria Dolorosa (Martis et Veneris)</h4>
+                        <ol>
+                            <li><strong>Agonia in Horto:</strong> Iesus oravit in Horto Gethsemani</li>
+                            <li><strong>Flagellatio:</strong> Iesus flagellatus est</li>
+                            <li><strong>Coronatio Spinea:</strong> Iesus coronatus est spinis</li>
+                            <li><strong>Portatio Crucis:</strong> Iesus portavit crucem</li>
+                            <li><strong>Crucifixio:</strong> Iesus crucifixus est</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>🌟 Mysteria Gloriosa (Mercurii et Dominico)</h4>
+                        <ol>
+                            <li><strong>Resurrectio:</strong> Iesus resurrexit a mortuis</li>
+                            <li><strong>Ascensio:</strong> Iesus ascendit in caelum</li>
+                            <li><strong>Missio Spiritus Sancti:</strong> Spiritus Sanctus venit super Apostolos</li>
+                            <li><strong>Assumptio:</strong> Maria assunta est in caelum</li>
+                            <li><strong>Coronatio:</strong> Maria coronata est Regina caeli</li>
+                        </ol>
+                    </div>
+
+                    <div class="mystery-card">
+                        <h4>🕯️ Mysteria Luminosa (Iovis)</h4>
+                        <ol>
+                            <li><strong>Baptismus Iesu:</strong> Iesus baptizatus est in Iordane</li>
+                            <li><strong>Nuptiae Canae:</strong> Iesus fecit primum miraculum</li>
+                            <li><strong>Praedicatio Regni:</strong> Iesus praedicavit Evangelium</li>
+                            <li><strong>Transfiguratio:</strong> Iesus transfiguratus est</li>
+                            <li><strong>Institutio Eucharistiae:</strong> Iesus dedit nobis Corpus et Sanguinem suum</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="prayer-card">
+                    <h3>Ave Regina Caelorum</h3>
+                    <p>Ave, Regina caelorum, Ave, Domina Angelorum: Salve, radix, salve, porta, Ex qua mundo lux est arta: Gaude, Virgo gloriosa, Super omnes speciosa: Vale, O valde decora, Vanc pro nobis Christum ora.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-button">
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            // Hide all prayers
+            document.getElementById('english-prayer').classList.remove('active');
+            document.getElementById('latin-prayer').classList.remove('active');
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected prayer
+            if (lang === 'english') {
+                document.getElementById('english-prayer').classList.add('active');
+                document.querySelectorAll('.lang-btn')[0].classList.add('active');
+            } else {
+                document.getElementById('latin-prayer').classList.add('active');
+                document.querySelectorAll('.lang-btn')[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
